@@ -17,7 +17,7 @@ c = zeros(10000) + f_t
 for n in range(1, 5):
     c += 4 * (V_max - V_min) / (pi * (2 * n - 1)) ** 2 * cos((2 * n - 1) * (2 * pi / (4)) * t)
 d = zeros(10000) + f_t
-for n in range(1, 20):
+for n in range(1, 21):
     d += 4 * (V_max - V_min) / (pi * (2 * n - 1)) ** 2 * cos((2 * n - 1) * (2 * pi / (4)) * t)
 plt.plot(t, a)
 plt.plot(t, b)
