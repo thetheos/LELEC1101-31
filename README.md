@@ -7,6 +7,10 @@ This repository contains all the work done by the group 31 consisting of:
 - Alexandr Usoltsev
 - Théo Vanden Driessche
 
-For the project of the course LELEC1101 given at UCLouvain EPL.
+For the project of the course LELEC1101 given at UCLouvain EPL .
+
+# Credit
+
+Group
 
 
