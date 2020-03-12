@@ -1,0 +1,14 @@
+* C:\users\thetheos\My Documents\Université\BAC2\Q4.P_Elec\Labos\S6\filtre_passe_bande.asc
+R1 N002 N001 1k
+C1 N002 N001 7961n
+C2 N001 N004 79.6n
+R2 N004 N003 10k
+XU1 0 N001 V++ V-- N002 TL084
+V1 V++ 0 15
+V2 V-- 0 -15
+V3 N003 0 AC 1.
+R3 N002 0 10
+.include Z:\home\thetheos\Downloads\TL084.lib
+.ac dec 100 20 30k
+.backanno
+.end

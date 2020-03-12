@@ -1,0 +1,21 @@
+Circuit: * C:\users\thetheos\My Documents\Université\BAC2\Q4.P_Elec\Problem\P2\Simulations\Filtre passe bas\filtre_passe_bas.asc
+
+.OP point found by inspection.
+
+Date: Thu Mar 05 23:14:15 2020
+Total elapsed time: 0.017 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2250
+traniter = 2250
+tranpoints = 1126
+accept = 1126
+rejected = 0
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1: 50 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2:      15 opcodes  0.1/[0.1]/0.1
+
