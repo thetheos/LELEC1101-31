@@ -12,4 +12,3 @@ For the project of the course LELEC1101 given at UCLouvain EPL .
 # Credit
 
 Group
-
