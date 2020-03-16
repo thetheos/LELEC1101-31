@@ -2,21 +2,6 @@
 ---
 The differential amplifier simply multiplies and then subtracts two signals. Refering to the schematic `differentialAmplifier.asc`, we get 
 \[
-<<<<<<< HEAD
- V_{out} = - \frac{R_3}{R_1} V_{in_1} + \left(\frac{R_4}{R_2 + R_4} \right) \left( \frac{R_1 + R_3}{R_1}\right) V_{in_2}
-\]
-In the particular case where $R_1 = R_2$ and $R_3 = R_4$, then
-\[
-V_{out} = \frac{R_3}{R_1}\left(V_{in_2} - V_{in_1} \right)
-\]
-
-
-| Value     | Min      | Typical  | Max | 
-| --------- |:--------:|:--------:|----:|
-| $V_{in_1}$| -15      |     /    |15   |
-| $V_{in_2}$| -15      |     /    |15   |
-| $V_{out}$ | -15      |     /    |15   |
-=======
  V_{out} = - \dfrac{R_2}{R_1} V_{in_1} + \dfrac{R_2}{R_1} V_{in_2}
 \]
 
@@ -24,4 +9,3 @@ V_{out} = \frac{R_3}{R_1}\left(V_{in_2} - V_{in_1} \right)
 
 
 In itself, the differential amplifier has very few *limits*.
->>>>>>> 67ea2d215f4d81bf30cc93e82cfbc98dbc03eb70
