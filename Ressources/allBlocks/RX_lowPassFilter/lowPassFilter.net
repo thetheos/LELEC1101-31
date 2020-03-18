@@ -1,7 +1,0 @@
-* C:\Users\guill\Programmes\LELEC1101-31\Ressources\allBlocks\RX_lowPassFilter\lowPassFilter.asc
-V1 Vin 0 PULSE(0 15 0 0.01m 0.01m 1m 2m)
-R1 Vin N001 1000
-C1 N001 0 17µ
-.tran 1
-.backanno
-.end
