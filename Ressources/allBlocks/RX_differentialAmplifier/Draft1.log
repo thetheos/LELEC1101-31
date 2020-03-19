@@ -1,0 +1,21 @@
+Circuit: * C:\Users\guill\Programmes\LELEC1101-31\Ressources\allBlocks\RX_differentialAmplifier\Draft1.asc
+
+.OP point found by inspection.
+
+Date: Wed Mar 18 12:05:06 2020
+Total elapsed time: 0.193 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 73026
+traniter = 73026
+tranpoints = 36514
+accept = 26516
+rejected = 9998
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1: 50 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: 175 bytes object code size  0.0/0.0/[0.0]
+

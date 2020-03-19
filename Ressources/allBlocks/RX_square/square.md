@@ -1,0 +1,1 @@
+The square block outputs the sign of the input (ie 15ish Volts when the input is positive and -15ish Volts when it is negative)
