@@ -1,0 +1,32 @@
+* C:\users\thetheos\My Documents\Université\BAC2\Q4.P_Elec\Ressources\allBlocks\ez_multiplier.asc
+V1 Vcc 0 15
+V2 Vee 0 -15
+V3 V1 0 SINE(0 0.2 1000)
+V4 V2 0 SINE(0 0.2 100)
+R1 N008 V1 100
+R2 N008 V2 100
+R3 N009 V2 100
+R4 N009 V2 100
+R5 N005 N008 50
+R6 N009 N005 50
+R7 N010 N009 50
+R8 N006 N005 50
+R9 N010 N004 50
+R10 N007 N003 100
+R11 N003 N002 100
+R12 N002 N001 100
+XU1 0 N008 Vcc Vee N005 TL084
+XU2 0 N009 Vcc Vee N010 TL084
+XU3 0 N007 Vcc Vee N003 TL084
+XU4 0 N002 Vcc Vee N001 TL084
+D1 N006 N002 D
+D2 N002 N004 D
+D3 N004 N007 D
+D4 N007 N006 D
+R13 N001 0 100
+.model D D
+.lib C:\users\thetheos\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 600ms
+.include TL084.lib
+.backanno
+.end
