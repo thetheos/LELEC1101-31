@@ -1,20 +1,21 @@
-Circuit: * C:\users\thetheos\My Documents\Université\BAC2\Q4.P_Elec\Labos\S6\filtre_passe_bande.asc
+Circuit: * E:\Documents\UCL\bac2\Q4\projetElec\LELEC1101-31\Labos\S6\filtre_passe_bande.asc
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Wed Mar 11 19:36:43 2020
-Total elapsed time: 0.021 seconds.
+Date: Mon Mar 16 10:27:16 2020
+Total elapsed time: 1.802 seconds.
 
 tnom = 27
 temp = 27
-method = trap
-totiter = 21
-traniter = 0
-tranpoints = 0
-accept = 0
-rejected = 0
-matrix size = 30
+method = modified trap
+totiter = 323734
+traniter = 323716
+tranpoints = 161859
+accept = 109033
+rejected = 52826
+matrix size = 32
 fillins = 32
 solver = Normal
-Matrix Compiler1:     156 opcodes
-Matrix Compiler2: 2.98 KB object code size
+Matrix Compiler1: 2.84 KB object code size  0.6/0.3/[0.2]
+Matrix Compiler2: off  [0.3]/0.4/0.3
+
