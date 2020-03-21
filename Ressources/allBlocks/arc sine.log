@@ -1,0 +1,21 @@
+Circuit: * C:\Users\guill\Programmes\LELEC1101-31\Ressources\allBlocks\arc sine.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Mar 19 20:46:47 2020
+Total elapsed time: 3.680 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 1013917
+traniter = 1013891
+tranpoints = 220848
+accept = 157748
+rejected = 63100
+matrix size = 25
+fillins = 14
+solver = Normal
+Matrix Compiler1: 1.54 KB object code size  0.4/0.2/[0.2]
+Matrix Compiler2: 2.15 KB object code size  0.2/0.4/[0.2]
+
