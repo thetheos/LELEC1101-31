@@ -1,2 +1,6 @@
 #Ignore PDF because not plain text
 *.pdf
+<<<<<<< HEAD
+=======
+*.raw
+>>>>>>> 1d4e5df864c5498fc82c649544277a89b70cbf1b

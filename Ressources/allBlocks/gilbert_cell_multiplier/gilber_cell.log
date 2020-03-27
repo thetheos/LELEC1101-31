@@ -1,0 +1,4 @@
+Circuit: * C:\users\thetheos\Mes documents\Universite\BAC2\Q4.P_Elec\Ressources\allBlocks\gilbert_cell_multiplier\gilber_cell.asc
+
+Fatal Error: Port(pin) count mismatch between the definition of subcircuit "tl084" and instance: "xu1"
+The instance has fewer connection terminals than the definition.

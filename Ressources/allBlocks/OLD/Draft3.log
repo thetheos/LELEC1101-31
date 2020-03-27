@@ -1,0 +1,7 @@
+Circuit: * C:\users\thetheos\Mes documents\Universite\BAC2\Q4.P_Elec\Ressources\allBlocks\Draft3.asc
+
+Error on line 15 : c2 p001 v2 c
+	 Unable to find definition of model "c"
+Error on line 17 : c1 v1 n001 c
+	 Unable to find definition of model "c"
+Fatal Error: Missing capacitance value for "C1"
