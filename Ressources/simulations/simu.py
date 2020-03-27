@@ -52,6 +52,7 @@ fig.update_layout(
     sliders=sliders,
     showlegend=True
 )
+
 plot(fig, filename='fig.html')
 fig.show()
 

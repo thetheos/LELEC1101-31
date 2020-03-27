@@ -1,0 +1,23 @@
+function setup() {
+  // Sets the screen to be 720 pixels wide and 400 pixels high
+  createCanvas(720, 400);
+  gSlider = createSlider(-90, 90, 0);
+  gSlider.position(20, 50);
+
+}
+
+function draw() {
+    
+     angleMode(DEGREES);
+    fill(255,255,0);
+    let r = width/10;
+    clear();
+    background(220);
+    circle(width/2-r*cos(gSlider.value()), height/2-r*sin(gSlider.value()) , 10);
+    fill(255);
+    line(width/2, height/2, width/2-r*cos(gSlider.value()), height/2-r*sin(gSlider.value()));
+    line(width/2, height/2-10, width/2, height/2+10);
+    fill(0, 102, 153);
+    text('Angle: ' + gSlider.value() +'°', gSlider.x * 2 + gSlider.width, 65);
+    
+}
