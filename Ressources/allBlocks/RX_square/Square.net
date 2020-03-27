@@ -1,0 +1,9 @@
+* C:\users\thetheos\My Documents\Université\BAC2\Q4.P_Elec\Ressources\allBlocks\RX_square\Square.asc
+XU1 Vin 0 15 -15 Vout TL084
+V1 15 0 15
+V2 -15 0 -15
+V3 Vin 0 SINE(0 0.01 1k)
+.include ../TL084.lib
+.tran 10m
+.backanno
+.end

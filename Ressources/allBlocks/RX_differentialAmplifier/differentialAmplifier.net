@@ -1,0 +1,14 @@
+* C:\users\thetheos\My Documents\Université\BAC2\Q4.P_Elec\Ressources\allBlocks\RX_differentialAmplifier\differentialAmplifier.asc
+XU1 N002 N001 Vcc Vee out TL084
+R1 N001 in1 10k
+R2 N002 in2 10k
+R3 out N001 20k
+V1 Vcc 0 15
+V2 Vee 0 -15
+V3 in1 0 PULSE(-15 15 0.6m 0.01m 0.01m 1m 2m)
+V4 in2 0 PULSE(-15 15 0 0.01m 0.01m 1m 2m)
+R4 N002 0 20k
+.tran 10m
+.include ../TL084.lib
+.backanno
+.end
