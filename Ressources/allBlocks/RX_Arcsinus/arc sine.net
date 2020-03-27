@@ -1,0 +1,38 @@
+* C:\users\thetheos\Mes documents\Universite\BAC2\Q4.P_Elec\Ressources\allBlocks\RX_Arcsinus\arc sine.asc
+XU1 N004 N002 N001 N005 pwm LM393
+V1 N001 0 5V
+V2 0 N005 5V
+Vsine sine 0 SINE(0 2 10000)
+Vinput input 0 -1
+R1 N002 sine 100
+R2 N004 input 100
+R3 N001 pwm 1k5
+R4 N003 pwm 100k
+C1 N003 0 1n
+C2 out 0 1n
+R5 out N003 100k
+.tran 1
+* Arc sine converter - principle                km\n------------------------------------------------------------------
+.subckt LM393    1 2 3 4 5
+*
+f1    9  3 v1 1
+iee   3  7 dc 100.0E-6
+vi1  21  1 dc .75
+vi2  22  2 dc .75
+q1    9 21  7 qin
+q2    8 22  7 qin
+q3    9  8  4 qmo
+q4    8  8  4 qmi
+.model qin PNP(Is=800.0E-18 Bf=2.000E3)
+.model qmi NPN(Is=800.0E-18 Bf=1002)
+.model qmo NPN(Is=800.0E-18 Bf=1000 Cjc=1E-15 Tr=475.4E-9)
+e1   10  4  9  4  1
+v1   10 11 dc 0
+q5    5 11  4 qoc
+.model qoc NPN(Is=800.0E-18 Bf=20.69E3 Cjc=1E-15 Tf=3.540E-9 Tr=472.8E-9)
+dp    4  3 dx
+rp    3  4 37.50E3
+.model dx  D(Is=800.0E-18 Rs=1)
+.ends
+.backanno
+.end
