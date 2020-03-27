@@ -51,8 +51,6 @@ fig.update_layout(
     title="Side of incoming sound + Angle",
     sliders=sliders,
     showlegend=True
-)
-
 plot(fig, filename='fig.html')
 fig.show()
 
