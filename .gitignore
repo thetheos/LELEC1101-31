@@ -1,3 +1,4 @@
 #Ignore PDF because not plain text
 *.pdf
 *.raw
+*.log
