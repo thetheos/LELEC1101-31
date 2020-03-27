@@ -1,9 +1,9 @@
-* C:\Users\guill\Programmes\LELEC1101-31\Ressources\allBlocks\arc sine.asc
+* C:\users\thetheos\Mes documents\Universite\BAC2\Q4.P_Elec\Ressources\allBlocks\RX_Arcsinus\arc sine.asc
 XU1 N004 N002 N001 N005 pwm LM393
 V1 N001 0 5V
 V2 0 N005 5V
-Vsine sine 0 SINE(0 2V 10kHz)
-Vinput input 0 PWL(0 -2 100m 2)
+Vsine sine 0 SINE(0 2 10000)
+Vinput input 0 -1
 R1 N002 sine 100
 R2 N004 input 100
 R3 N001 pwm 1k5
@@ -11,7 +11,7 @@ R4 N003 pwm 100k
 C1 N003 0 1n
 C2 out 0 1n
 R5 out N003 100k
-.tran 100m
+.tran 1
 * Arc sine converter - principle                km\n------------------------------------------------------------------
 .subckt LM393    1 2 3 4 5
 *
