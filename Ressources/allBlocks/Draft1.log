@@ -1,4 +1,4 @@
-Circuit: * Z:\home\thetheos\Documents\Université\BAC2\Q4.P_Elec\Ressources\allBlocks\Draft1.asc
+Circuit: * C:\Users\guill\Programmes\LELEC1101-31\Ressources\allBlocks\Draft1.asc
 
 Fatal Error: Unknown subcircuit called in:
-   xu1 0 n008 vcc vee n005 tl084
+   xu1 0 n006 vcc vee n007 tl084
