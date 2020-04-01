@@ -1,0 +1,14 @@
+* C:\users\thetheos\My Documents\Université\BAC2\Q4.P_Elec\Ressources\allBlocks\Complete_Circuit\Draft1.asc
+J1 N002 N001 0 NJF
+R1 V++ N002 14k
+V1 N001 0 SINE(0 0.001 3000 0 0 90)
+C1 N002 N003 2.2µ
+V2 V++ 0 15
+V3 V-- 0 -15
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\thetheos\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 0 100m 0 1m
+* Opamp voltage
+.backanno
+.end

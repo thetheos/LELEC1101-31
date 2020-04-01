@@ -1,0 +1,14 @@
+* E:\Documents\UCL\bac2\Q4\projetElec\LELEC1101-31\Labos\S7\oscillo.asc
+XU1 N002 0 VCC VEE Vout TL084
+V1 VCC 0 15
+V2 VEE 0 -15
+R2 Vout N002 3k
+XU2 0 N001 VCC VEE Vin2 TL084
+R4 N001 Vout 1k
+R1 N002 Vin2 1k
+C1 Vin2 N001 300n
+.include TL084.lib
+.tran 1000m
+* Vseuil=(VCC*R1)/(R1+R2)
+.backanno
+.end
