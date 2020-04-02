@@ -1,0 +1,297 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5300 2750 0    50   Input ~ 0
+VDiff
+$Comp
+L Device:C C1
+U 1 1 5E86CB4C
+P 7500 3000
+F 0 "C1" H 7300 3000 50  0000 L CNN
+F 1 "1µ" H 7615 3000 50  0000 L CNN
+F 2 "" H 7538 2850 50  0001 C CNN
+F 3 "~" H 7500 3000 50  0001 C CNN
+	1    7500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5E8653CF
+P 5800 2500
+F 0 "D?" H 5800 2673 50  0001 C CNN
+F 1 "DIODE" H 5800 2674 50  0001 C CNN
+F 2 "" H 5800 2500 50  0001 C CNN
+F 3 "~" H 5800 2500 50  0001 C CNN
+	1    5800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5E866252
+P 6700 3000
+F 0 "D?" H 6700 3265 50  0001 C CNN
+F 1 "DIODE" H 6700 3173 50  0001 C CNN
+F 2 "" H 6700 3000 50  0001 C CNN
+F 3 "~" H 6700 3000 50  0001 C CNN
+	1    6700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5E8670E0
+P 5800 3000
+F 0 "D?" H 5800 2827 50  0001 C CNN
+F 1 "DIODE" H 5800 2826 50  0001 C CNN
+F 2 "" H 5800 3000 50  0001 C CNN
+F 3 "~" H 5800 3000 50  0001 C CNN
+	1    5800 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5E868823
+P 6700 2500
+F 0 "D?" H 6700 2235 50  0001 C CNN
+F 1 "DIODE" H 6700 2327 50  0001 C CNN
+F 2 "" H 6700 2500 50  0001 C CNN
+F 3 "~" H 6700 2500 50  0001 C CNN
+	1    6700 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 2750 5500 2750
+Wire Wire Line
+	5500 2500 5600 2500
+Wire Wire Line
+	5500 3000 5600 3000
+Wire Wire Line
+	5500 2500 5500 2750
+Connection ~ 5500 2750
+Wire Wire Line
+	5500 2750 5500 3000
+Wire Wire Line
+	6000 3000 6250 3000
+Wire Wire Line
+	6900 3000 7000 3000
+Wire Wire Line
+	7000 2500 6900 2500
+Wire Wire Line
+	6500 2500 6250 2500
+Wire Wire Line
+	6250 2500 6250 2250
+Wire Wire Line
+	6250 2250 7500 2250
+Wire Wire Line
+	7500 2250 7500 2400
+Connection ~ 6250 2500
+Wire Wire Line
+	6250 2500 6000 2500
+Wire Wire Line
+	6250 3000 6250 3300
+Wire Wire Line
+	6250 3300 7500 3300
+Wire Wire Line
+	7500 3300 7500 3250
+Connection ~ 6250 3000
+Wire Wire Line
+	6250 3000 6500 3000
+Wire Wire Line
+	7500 2700 7500 2750
+Connection ~ 7500 2750
+Wire Wire Line
+	7500 2750 7500 2850
+Connection ~ 7500 3250
+Wire Wire Line
+	7500 3250 7500 3150
+Wire Notes Line style dash_dot
+	7300 2150 7300 3500
+Wire Notes Line style dash_dot
+	5000 2150 5000 3500
+Text Notes 7350 2100 0    50   ~ 0
+Low pass Filter
+Text Notes 5950 2100 0    50   ~ 0
+Rectifier
+Wire Notes Line style dash_dot
+	7250 3500 7250 2150
+Wire Wire Line
+	7000 2500 7000 2750
+Wire Notes Line style dash_dot
+	5000 3500 7250 3500
+Wire Notes Line style dash_dot
+	5000 2150 7250 2150
+Connection ~ 7000 2750
+Wire Wire Line
+	7000 2750 7000 3000
+$Comp
+L power:Earth #PWR?
+U 1 1 5E8733EB
+P 7100 2750
+F 0 "#PWR?" H 7100 2500 50  0001 C CNN
+F 1 "Earth" H 7100 2600 50  0001 C CNN
+F 2 "" H 7100 2750 50  0001 C CNN
+F 3 "~" H 7100 2750 50  0001 C CNN
+	1    7100 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 2750 7100 2750
+Wire Wire Line
+	7500 2750 7850 2750
+Wire Wire Line
+	7500 3250 7850 3250
+$Comp
+L Device:R R2
+U 1 1 5E8761F0
+P 8000 2750
+F 0 "R2" V 8100 2750 50  0000 C CNN
+F 1 "10k" V 8000 2750 50  0000 C CNN
+F 2 "" V 7930 2750 50  0001 C CNN
+F 3 "~" H 8000 2750 50  0001 C CNN
+	1    8000 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E877599
+P 8000 3250
+F 0 "R3" V 7900 3250 50  0000 C CNN
+F 1 "10k" V 8000 3250 50  0000 C CNN
+F 2 "" V 7930 3250 50  0001 C CNN
+F 3 "~" H 8000 3250 50  0001 C CNN
+	1    8000 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U?
+U 2 1 5E877E5F
+P 8800 2850
+F 0 "U?" H 8800 3217 50  0001 C CNN
+F 1 "TL082" H 8950 2700 50  0000 C CNN
+F 2 "" H 8800 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 8800 2850 50  0001 C CNN
+	2    8800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3250 8500 3250
+Wire Wire Line
+	8500 3250 8500 2950
+$Comp
+L Device:R R5
+U 1 1 5E8827EA
+P 8950 3300
+F 0 "R5" V 8850 3300 50  0000 C CNN
+F 1 "20k" V 8950 3300 50  0000 C CNN
+F 2 "" V 8880 3300 50  0001 C CNN
+F 3 "~" H 8950 3300 50  0001 C CNN
+	1    8950 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5E88371E
+P 9100 3300
+F 0 "#PWR?" H 9100 3050 50  0001 C CNN
+F 1 "Earth" H 9100 3150 50  0001 C CNN
+F 2 "" H 9100 3300 50  0001 C CNN
+F 3 "~" H 9100 3300 50  0001 C CNN
+	1    9100 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 2850 9400 2850
+$Comp
+L Device:R R4
+U 1 1 5E886BFE
+P 8900 2400
+F 0 "R4" V 8800 2400 50  0000 C CNN
+F 1 "20k" V 8900 2400 50  0000 C CNN
+F 2 "" V 8830 2400 50  0001 C CNN
+F 3 "~" H 8900 2400 50  0001 C CNN
+	1    8900 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8150 2750 8400 2750
+Wire Wire Line
+	8750 2400 8400 2400
+Wire Wire Line
+	8400 2400 8400 2750
+Connection ~ 8400 2750
+Wire Wire Line
+	8400 2750 8500 2750
+Wire Wire Line
+	9050 2400 9100 2400
+Wire Wire Line
+	9100 2400 9100 2850
+Connection ~ 9100 2850
+$Comp
+L Amplifier_Operational:TL082 U?
+U 3 1 5E88A437
+P 8800 2850
+F 0 "U?" H 8744 2896 50  0001 L CNN
+F 1 "TL082" H 8744 2850 50  0001 L CNN
+F 2 "" H 8800 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 8800 2850 50  0001 C CNN
+	3    8800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5E88DD9E
+P 8700 2550
+F 0 "#PWR?" H 8700 2400 50  0001 C CNN
+F 1 "+15V" H 8600 2550 50  0000 C CNN
+F 2 "" H 8700 2550 50  0001 C CNN
+F 3 "" H 8700 2550 50  0001 C CNN
+	1    8700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR?
+U 1 1 5E88EFB7
+P 8700 3150
+F 0 "#PWR?" H 8700 3250 50  0001 C CNN
+F 1 "-15V" H 8800 3150 50  0000 C CNN
+F 2 "" H 8700 3150 50  0001 C CNN
+F 3 "" H 8700 3150 50  0001 C CNN
+	1    8700 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8800 3300 8500 3300
+Wire Wire Line
+	8500 3300 8500 3250
+Connection ~ 8500 3250
+Text GLabel 9400 2850 2    50   Input ~ 0
+Vdirdiff
+Wire Notes Line style dash_dot
+	9850 3500 9850 2150
+Wire Notes Line style dash_dot
+	7300 3500 9850 3500
+Wire Notes Line style dash_dot
+	7300 2150 9850 2150
+$Comp
+L Device:R R1
+U 1 1 5E89885B
+P 7500 2550
+F 0 "R1" V 7400 2550 50  0000 C CNN
+F 1 "20k" V 7500 2550 50  0000 C CNN
+F 2 "" V 7430 2550 50  0001 C CNN
+F 3 "~" H 7500 2550 50  0001 C CNN
+	1    7500 2550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
