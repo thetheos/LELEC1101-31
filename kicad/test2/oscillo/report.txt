@@ -1,0 +1,2 @@
+Plot: “E:\Documents\UCL\bac2\Q4\projetElec\LELEC1101-31\kicad\test2\oscillo\oscillo.pdf” OK.
+
