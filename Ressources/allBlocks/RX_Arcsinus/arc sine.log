@@ -1,21 +1,21 @@
-Circuit: * C:\users\thetheos\Mes documents\Universite\BAC2\Q4.P_Elec\Ressources\allBlocks\RX_Arcsinus\arc sine.asc
+Circuit: * C:\Users\guill\Programmes\LELEC1101-31\Ressources\allBlocks\RX_Arcsinus\arc sine.asc
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Thu Mar 26 23:49:44 2020
-Total elapsed time: 51.340 seconds.
+Date: Sun Mar 29 20:05:53 2020
+Total elapsed time: 4.792 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 10388251
-traniter = 10388226
-tranpoints = 2270940
-accept = 1622758
-rejected = 648182
+totiter = 988181
+traniter = 988171
+tranpoints = 219273
+accept = 158470
+rejected = 60803
 matrix size = 25
-fillins = 14
+fillins = 8
 solver = Normal
-Matrix Compiler1: 1.54 KB object code size  0.5/0.4/[0.2]
-Matrix Compiler2: off  [0.4]/0.4/0.4
+Matrix Compiler1: 1.36 KB object code size  0.3/0.2/[0.1]
+Matrix Compiler2: 2.07 KB object code size  0.2/0.3/[0.2]
 
