@@ -1,0 +1,155 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:DIODE D?
+U 1 1 5E85A845
+P 7000 3500
+F 0 "D?" H 7000 3673 50  0001 C CNN
+F 1 "DIODE" H 7000 3674 50  0001 C CNN
+F 2 "" H 7000 3500 50  0001 C CNN
+F 3 "~" H 7000 3500 50  0001 C CNN
+	1    7000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5E85FCEB
+P 5500 3500
+F 0 "D?" H 5500 3327 50  0001 C CNN
+F 1 "DIODE" H 5500 3326 50  0001 C CNN
+F 2 "" H 5500 3500 50  0001 C CNN
+F 3 "~" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5E860E16
+P 7000 2500
+F 0 "D?" H 7000 2235 50  0001 C CNN
+F 1 "DIODE" H 7000 2327 50  0001 C CNN
+F 2 "" H 7000 2500 50  0001 C CNN
+F 3 "~" H 7000 2500 50  0001 C CNN
+	1    7000 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5E862030
+P 5500 2500
+F 0 "D?" H 5500 2765 50  0001 C CNN
+F 1 "DIODE" H 5500 2673 50  0001 C CNN
+F 2 "" H 5500 2500 50  0001 C CNN
+F 3 "~" H 5500 2500 50  0001 C CNN
+	1    5500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3500 5000 3500
+Wire Wire Line
+	5000 3500 5000 3000
+Wire Wire Line
+	5000 2500 5300 2500
+Wire Wire Line
+	5700 3500 6250 3500
+Wire Wire Line
+	6250 3500 6250 4000
+Connection ~ 6250 3500
+Wire Wire Line
+	6250 3500 6800 3500
+Wire Wire Line
+	7200 3500 7500 3500
+Wire Wire Line
+	7500 3500 7500 3000
+Wire Wire Line
+	7500 2500 7200 2500
+Wire Wire Line
+	5700 2500 6250 2500
+Wire Wire Line
+	6250 2500 6250 2000
+Wire Wire Line
+	6250 2000 9000 2000
+Connection ~ 6250 2500
+Wire Wire Line
+	6250 2500 6800 2500
+Wire Wire Line
+	6250 4000 9000 4000
+Wire Wire Line
+	5000 3000 4500 3000
+Connection ~ 5000 3000
+Wire Wire Line
+	5000 3000 5000 2500
+Wire Wire Line
+	7500 3000 7800 3000
+Connection ~ 7500 3000
+Wire Wire Line
+	7500 3000 7500 2500
+$Comp
+L power:Earth #PWR?
+U 1 1 5E86AC6F
+P 7800 3000
+F 0 "#PWR?" H 7800 2750 50  0001 C CNN
+F 1 "Earth" H 7800 2850 50  0001 C CNN
+F 2 "" H 7800 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4500 3000 0    50   Input ~ 0
+VDiff
+$Comp
+L Device:R m
+U 1 1 5E86C0A6
+P 9000 2350
+F 0 "m" H 9070 2396 50  0001 L CNN
+F 1 "20k" H 9070 2350 50  0000 L CNN
+F 2 "" V 8930 2350 50  0001 C CNN
+F 3 "~" H 9000 2350 50  0001 C CNN
+	1    9000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E86CB4C
+P 9000 3350
+F 0 "C?" H 9115 3396 50  0001 L CNN
+F 1 "80n" H 9115 3350 50  0000 L CNN
+F 2 "" H 9038 3200 50  0001 C CNN
+F 3 "~" H 9000 3350 50  0001 C CNN
+	1    9000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2000 9000 2200
+Wire Wire Line
+	9000 2500 9000 3000
+Wire Wire Line
+	9000 3500 9000 3750
+Wire Wire Line
+	9000 3000 9500 3000
+Connection ~ 9000 3000
+Wire Wire Line
+	9000 3000 9000 3200
+Wire Wire Line
+	9000 3750 9500 3750
+Connection ~ 9000 3750
+Wire Wire Line
+	9000 3750 9000 4000
+Text GLabel 9500 3000 2    50   Input ~ 0
+Vdir+
+Text GLabel 9500 3750 2    50   Input ~ 0
+Vdir-
+$EndSCHEMATC
