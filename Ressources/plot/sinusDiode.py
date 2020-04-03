@@ -12,7 +12,7 @@ import numpy as np
 # plt.plot(vt,arcsin,'r')
 # plt.plot(vt,gain*vt)
 # plt.show()
-fj = np.logspace(-1,5,250)
+fj = np.logspace(-2,6,250)
 omegaj = 2*np.pi*fj
 bode = (1j*omegaj)*1.6/((1+ (1j*omegaj)*0.016)*(1+(1j*omegaj)*5.3*10**-5))
 bodeAmp = 20*np.log10(np.abs(bode))
