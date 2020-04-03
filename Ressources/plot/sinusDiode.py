@@ -12,6 +12,9 @@ import numpy as np
 # plt.plot(vt,arcsin,'r')
 # plt.plot(vt,gain*vt)
 # plt.show()
-filename = "arthursinus.txt"
-data = np.loadtxt(filename, delimiter="\t",usecols=[1,2])
+omegaj = np.logspace(-1,5,10000)
+bode = 20* np.log10((1j*omegaj)*1.6/((1+ (1j*omegaj)*0.016)*(1+(1j*omegaj)*5.3*10**-5)))
+bodeAmp = np.abs(bode)
+bodePhase = np.angle(bode)
+np.savetxt('out.txt',np.transpose(np.array([omegaj,bodeAmp,bodePhase])),delimiter='\t')
 
