@@ -1,1 +1,57 @@
-Fatal Error: Could not open include file "TL082"
+Circuit: * C:\Users\guill\Programmes\LELEC1101-31\Labos\S6\Draft1.asc
+
+WARNING: Node N008 is floating.
+WARNING: Node OUT2G is floating.
+
+WARNING: Less than two connections to node OUT2.  This node is used by R13.
+WARNING: Less than two connections to node OUT2G.  This node is used by C5.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Increasing initial diagonal Gmin to 1000
+Gmin = 1000
+Gmin = 107.374
+Gmin = 11.5292
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 5.55573
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+Gmin = 5.50191
+vernier = 0.00390625
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 5.50057
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Tue Mar 31 20:09:32 2020
+Total elapsed time: 78.260 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3495434
+traniter = 3493258
+tranpoints = 1695071
+accept = 1146247
+rejected = 548824
+matrix size = 103
+fillins = 266
+solver = Normal
+Thread vector: 16.9/7.6[3] 4.3/4.5[1] 3.8/2.8[3] 0.3/0.8[1]  2592/500
+Matrix Compiler1: 13.46 KB object code size  3.1/1.2/[0.9]
+Matrix Compiler2: 13.60 KB object code size  1.5/1.8/[0.8]
+
