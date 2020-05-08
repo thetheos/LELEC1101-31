@@ -194,7 +194,7 @@ F 4 "Y" H 5400 2750 50  0001 L CNN "Spice_Netlist_Enabled"
 F 5 "X" H 5400 2750 50  0001 L CNN "Spice_Primitive"
 F 6 "TL084" H 5400 2750 50  0001 C CNN "Spice_Model"
 F 7 "1 2 4 5 3" H 5400 2750 50  0001 C CNN "Spice_Node_Sequence"
-F 8 "/home/thetheos/Downloads/TL084.301" H 5400 2750 50  0001 C CNN "Spice_Lib_File"
+F 8 "/home/thetheos/Downloads/TL084.lib" H 5400 2750 50  0001 C CNN "Spice_Lib_File"
 	1    5400 2750
 	1    0    0    -1  
 $EndComp
