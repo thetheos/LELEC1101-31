@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name oscillo-rescue)(type Legacy)(uri ${KIPRJMOD}/oscillo-rescue.lib)(options "")(descr ""))
+)

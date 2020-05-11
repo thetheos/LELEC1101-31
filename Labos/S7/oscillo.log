@@ -1,1 +1,42 @@
-Fatal Error: Could not open include file "TL084.lib"
+Circuit: * F:\Documents\UCL\bac2\Q4\projetElec\LELEC1101-31\Labos\S7\oscillo.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Increasing initial diagonal Gmin to 100
+Gmin = 100
+vernier = 0.5
+vernier = 0.25
+Gmin = 34.2672
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 33.0995
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+Gmin = 32.9705
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Tue May  5 17:38:30 2020
+Total elapsed time: 0.212 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3641
+traniter = 2108
+tranpoints = 1055
+accept = 1055
+rejected = 0
+matrix size = 67
+fillins = 189
+solver = Normal
+Matrix Compiler1: 13.85 KB object code size  2.2/1.0/[0.8]
+Matrix Compiler2: 9.46 KB object code size  1.1/1.1/[0.6]
+

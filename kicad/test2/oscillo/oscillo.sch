@@ -14,227 +14,232 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	3800 2400 3500 2400
+	7150 3200 6850 3200
 Wire Wire Line
-	3500 2400 3500 1950
+	6850 3200 6850 2750
 Wire Wire Line
-	4400 2500 4950 2500
+	7750 3300 8300 3300
 Wire Wire Line
-	3800 2600 3500 2600
+	6850 3400 6850 3950
+Connection ~ 6850 3400
 Wire Wire Line
-	3500 2600 3500 3150
-Connection ~ 3500 2600
+	6850 3400 6600 3400
 Wire Wire Line
-	3500 2600 3250 2600
-Wire Wire Line
-	4950 2500 4950 3150
-Connection ~ 4950 2500
+	8300 3300 8300 3950
 $Comp
-L Device:C C1
+L oscillo-rescue:C-Device C1
 U 1 1 5E87023C
-P 4600 3150
-F 0 "C1" V 4750 3150 50  0000 C CNN
-F 1 "68n" V 4440 3150 50  0000 C CNN
-F 2 "" H 4638 3000 50  0001 C CNN
-F 3 "~" H 4600 3150 50  0001 C CNN
-	1    4600 3150
+P 7950 3950
+F 0 "C1" V 8100 3950 50  0000 C CNN
+F 1 "68n" V 7790 3950 50  0000 C CNN
+F 2 "" H 7988 3800 50  0001 C CNN
+F 3 "~" H 7950 3950 50  0001 C CNN
+	1    7950 3950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4750 3150 4950 3150
+	8100 3950 8300 3950
 Wire Wire Line
-	3500 3150 4450 3150
+	6850 3950 7800 3950
 $Comp
-L Device:R R3
+L oscillo-rescue:R-Device R3
 U 1 1 5E8716B9
-P 3100 2600
-F 0 "R3" V 3200 2600 50  0000 C CNN
-F 1 "1k" V 3100 2600 50  0000 C CNN
-F 2 "" V 3030 2600 50  0001 C CNN
-F 3 "~" H 3100 2600 50  0001 C CNN
-	1    3100 2600
+P 6450 3400
+F 0 "R3" V 6550 3400 50  0000 C CNN
+F 1 "7.3K" V 6450 3400 50  0000 C CNN
+F 2 "" V 6380 3400 50  0001 C CNN
+F 3 "~" H 6450 3400 50  0001 C CNN
+	1    6450 3400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2650 2600 2950 2600
 $Comp
-L power:Earth #PWR?
+L oscillo-rescue:Earth-power #PWR?
 U 1 1 5E876BD9
-P 3500 1950
-F 0 "#PWR?" H 3500 1700 50  0001 C CNN
-F 1 "Earth" H 3500 1800 50  0001 C CNN
-F 2 "" H 3500 1950 50  0001 C CNN
-F 3 "~" H 3500 1950 50  0001 C CNN
-	1    3500 1950
+P 6850 2750
+F 0 "#PWR?" H 6850 2500 50  0001 C CNN
+F 1 "Earth" H 6850 2600 50  0001 C CNN
+F 2 "" H 6850 2750 50  0001 C CNN
+F 3 "~" H 6850 2750 50  0001 C CNN
+	1    6850 2750
 	-1   0    0    1   
 $EndComp
-Text GLabel 2650 2600 0    50   Input ~ 0
-Vout
 Wire Wire Line
-	6300 2700 6100 2700
+	4600 3500 4400 3500
 Wire Wire Line
-	6100 2700 6100 3000
+	4400 3500 4400 3800
 Wire Wire Line
-	6900 2600 7200 2600
+	5500 3400 5500 2700
 Wire Wire Line
-	7200 2600 7200 1900
-Wire Wire Line
-	6900 1900 7200 1900
+	5200 2700 5500 2700
 $Comp
-L Device:R R2
+L oscillo-rescue:R-Device R2
 U 1 1 5E899D96
-P 6750 1900
-F 0 "R2" V 6850 1900 50  0000 C CNN
-F 1 "3k" V 6750 1900 50  0000 C CNN
-F 2 "" V 6680 1900 50  0001 C CNN
-F 3 "~" H 6750 1900 50  0001 C CNN
-	1    6750 1900
+P 5050 2700
+F 0 "R2" V 5150 2700 50  0000 C CNN
+F 1 "8.4K" V 5050 2700 50  0000 C CNN
+F 2 "" V 4980 2700 50  0001 C CNN
+F 3 "~" H 5050 2700 50  0001 C CNN
+	1    5050 2700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6300 2500 6200 2500
+	4600 3300 4500 3300
 $Comp
-L Device:R R1
+L oscillo-rescue:R-Device R1
 U 1 1 5E89B209
-P 5950 2500
-F 0 "R1" V 6050 2500 50  0000 C CNN
-F 1 "1k" V 5950 2500 50  0000 C CNN
-F 2 "" V 5880 2500 50  0001 C CNN
-F 3 "~" H 5950 2500 50  0001 C CNN
-	1    5950 2500
+P 4250 3300
+F 0 "R1" V 4350 3300 50  0000 C CNN
+F 1 "1K" V 4250 3300 50  0000 C CNN
+F 2 "" V 4180 3300 50  0001 C CNN
+F 3 "~" H 4250 3300 50  0001 C CNN
+	1    4250 3300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4950 2500 5800 2500
+	4900 2700 4500 2700
 Wire Wire Line
-	6600 1900 6200 1900
+	4500 2700 4500 3300
+Connection ~ 4500 3300
 Wire Wire Line
-	6200 1900 6200 2500
-Connection ~ 6200 2500
+	4500 3300 4400 3300
 Wire Wire Line
-	6200 2500 6100 2500
-Wire Wire Line
-	7200 2600 7500 2600
-Connection ~ 7200 2600
-Text GLabel 7500 2600 2    50   Input ~ 0
-Vout
+	8300 3300 8600 3300
 $Comp
-L power:Earth #PWR?
+L oscillo-rescue:Earth-power #PWR?
 U 1 1 5E8A70A7
-P 6100 3000
-F 0 "#PWR?" H 6100 2750 50  0001 C CNN
-F 1 "Earth" H 6100 2850 50  0001 C CNN
-F 2 "" H 6100 3000 50  0001 C CNN
-F 3 "~" H 6100 3000 50  0001 C CNN
-	1    6100 3000
+P 4400 3800
+F 0 "#PWR?" H 4400 3550 50  0001 C CNN
+F 1 "Earth" H 4400 3650 50  0001 C CNN
+F 2 "" H 4400 3800 50  0001 C CNN
+F 3 "~" H 4400 3800 50  0001 C CNN
+	1    4400 3800
 	1    0    0    -1  
 $EndComp
 Wire Notes Line style dash_dot
-	5800 3250 7750 3250
+	4100 4050 6050 4050
 Wire Notes Line style dash_dot
-	7750 3250 7750 1700
+	6050 4050 6050 2500
 Wire Notes Line style dash_dot
-	7750 1700 5800 1700
-Wire Notes Line style dash_dot
-	5800 1700 5800 3250
-Text Notes 6500 1650 0    50   ~ 0
+	6050 2500 4100 2500
+Text Notes 4800 2450 0    50   ~ 0
 Schmitt Trigger
-Wire Notes Line style dash_dot
-	2150 1550 2150 3450
-Wire Notes Line style dash_dot
-	2150 3450 5200 3450
-Wire Notes Line style dash_dot
-	5200 3450 5200 1550
-Wire Notes Line style dash_dot
-	5200 1550 2150 1550
-Text Notes 3300 1500 0    50   ~ 0
+Text Notes 7250 2450 0    50   ~ 0
 Integrator circuit
 $Comp
-L power:-15V #PWR?
+L oscillo-rescue:-15V-power #PWR?
 U 1 1 5E8881A1
-P 6500 2900
-F 0 "#PWR?" H 6500 3000 50  0001 C CNN
-F 1 "-15V" H 6515 3073 50  0000 C CNN
-F 2 "" H 6500 2900 50  0001 C CNN
-F 3 "" H 6500 2900 50  0001 C CNN
-	1    6500 2900
+P 4800 3700
+F 0 "#PWR?" H 4800 3800 50  0001 C CNN
+F 1 "-15V" H 4815 3873 50  0000 C CNN
+F 2 "" H 4800 3700 50  0001 C CNN
+F 3 "" H 4800 3700 50  0001 C CNN
+	1    4800 3700
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+15V #PWR?
+L oscillo-rescue:+15V-power #PWR?
 U 1 1 5E889E39
-P 6500 2300
-F 0 "#PWR?" H 6500 2150 50  0001 C CNN
-F 1 "+15V" H 6515 2473 50  0000 C CNN
-F 2 "" H 6500 2300 50  0001 C CNN
-F 3 "" H 6500 2300 50  0001 C CNN
-	1    6500 2300
+P 4800 3100
+F 0 "#PWR?" H 4800 2950 50  0001 C CNN
+F 1 "+15V" H 4815 3273 50  0000 C CNN
+F 2 "" H 4800 3100 50  0001 C CNN
+F 3 "" H 4800 3100 50  0001 C CNN
+	1    4800 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:-15V #PWR?
+L oscillo-rescue:-15V-power #PWR?
 U 1 1 5E88D0E9
-P 4000 2800
-F 0 "#PWR?" H 4000 2900 50  0001 C CNN
-F 1 "-15V" H 4015 2973 50  0000 C CNN
-F 2 "" H 4000 2800 50  0001 C CNN
-F 3 "" H 4000 2800 50  0001 C CNN
-	1    4000 2800
+P 7350 3600
+F 0 "#PWR?" H 7350 3700 50  0001 C CNN
+F 1 "-15V" H 7365 3773 50  0000 C CNN
+F 2 "" H 7350 3600 50  0001 C CNN
+F 3 "" H 7350 3600 50  0001 C CNN
+	1    7350 3600
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+15V #PWR?
+L oscillo-rescue:+15V-power #PWR?
 U 1 1 5E88F676
-P 4000 2200
-F 0 "#PWR?" H 4000 2050 50  0001 C CNN
-F 1 "+15V" H 4015 2373 50  0000 C CNN
-F 2 "" H 4000 2200 50  0001 C CNN
-F 3 "" H 4000 2200 50  0001 C CNN
-	1    4000 2200
+P 7350 3000
+F 0 "#PWR?" H 7350 2850 50  0001 C CNN
+F 1 "+15V" H 7365 3173 50  0000 C CNN
+F 2 "" H 7350 3000 50  0001 C CNN
+F 3 "" H 7350 3000 50  0001 C CNN
+	1    7350 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL082 U?
+L oscillo-rescue:TL082-Amplifier_Operational U?
 U 3 1 5E868CF5
-P 4100 2500
-F 0 "U?" H 4058 2500 50  0001 L CNN
-F 1 "TL082" H 4058 2455 50  0001 L CNN
-F 2 "" H 4100 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4100 2500 50  0001 C CNN
-	3    4100 2500
+P 7450 3300
+F 0 "U?" H 7408 3300 50  0001 L CNN
+F 1 "TL082" H 7408 3255 50  0001 L CNN
+F 2 "" H 7450 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7450 3300 50  0001 C CNN
+	3    7450 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL082 U?
+L oscillo-rescue:TL082-Amplifier_Operational U?
 U 3 1 5E86E9A5
-P 6600 2600
-F 0 "U?" H 6558 2646 50  0001 L CNN
-F 1 "TL082" H 6558 2600 50  0001 L CNN
-F 2 "" H 6600 2600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6600 2600 50  0001 C CNN
-	3    6600 2600
+P 4900 3400
+F 0 "U?" H 4858 3446 50  0001 L CNN
+F 1 "TL082" H 4858 3400 50  0001 L CNN
+F 2 "" H 4900 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4900 3400 50  0001 C CNN
+	3    4900 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL082 U?
+L oscillo-rescue:TL082-Amplifier_Operational U?
 U 2 1 5E87264A
-P 4100 2500
-F 0 "U?" H 4100 2867 50  0001 C CNN
-F 1 "TL082" H 4250 2350 50  0000 C CNN
-F 2 "" H 4100 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4100 2500 50  0001 C CNN
-	2    4100 2500
+P 7450 3300
+F 0 "U?" H 7450 3667 50  0001 C CNN
+F 1 "TL082" H 7600 3150 50  0000 C CNN
+F 2 "" H 7450 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 7450 3300 50  0001 C CNN
+	2    7450 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TL082 U?
+L oscillo-rescue:TL082-Amplifier_Operational U?
 U 2 1 5E8755DA
-P 6600 2600
-F 0 "U?" H 6600 2967 50  0001 C CNN
-F 1 "TL082" H 6750 2450 50  0000 C CNN
-F 2 "" H 6600 2600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6600 2600 50  0001 C CNN
-	2    6600 2600
+P 4900 3400
+F 0 "U?" H 4900 3767 50  0001 C CNN
+F 1 "TL082" H 5050 3250 50  0000 C CNN
+F 2 "" H 4900 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4900 3400 50  0001 C CNN
+	2    4900 3400
 	1    0    0    -1  
 $EndComp
+Text GLabel 8600 3300 2    50   Output ~ 0
+Vout
+Wire Notes Line style dash_dot
+	4100 2500 4100 4050
+Connection ~ 8300 3300
+Connection ~ 5500 3400
+Wire Wire Line
+	5500 3400 6300 3400
+Wire Wire Line
+	5200 3400 5500 3400
+Wire Wire Line
+	8300 3950 8300 4400
+Connection ~ 8300 3950
+Wire Wire Line
+	3950 4400 3950 3300
+Wire Wire Line
+	3950 4400 8300 4400
+Wire Wire Line
+	3950 3300 4100 3300
+Wire Wire Line
+	6850 3400 7150 3400
+Wire Notes Line
+	6150 2500 8850 2500
+Wire Notes Line
+	6150 4250 8850 4250
+Wire Notes Line
+	6150 2500 6150 4250
+Wire Notes Line
+	8850 2500 8850 4250
 $EndSCHEMATC

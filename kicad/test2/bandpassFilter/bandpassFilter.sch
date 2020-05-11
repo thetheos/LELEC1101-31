@@ -1,0 +1,155 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5E86EACE
+P 4000 3500
+F 0 "R1" V 3900 3500 50  0000 C CNN
+F 1 "1k" V 4000 3500 50  0000 C CNN
+F 2 "" V 3930 3500 50  0001 C CNN
+F 3 "~" H 4000 3500 50  0001 C CNN
+	1    4000 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E8701E8
+P 4550 3500
+F 0 "C1" V 4400 3500 50  0000 C CNN
+F 1 "15.9µ" V 4700 3500 50  0000 C CNN
+F 2 "" H 4588 3350 50  0001 C CNN
+F 3 "~" H 4550 3500 50  0001 C CNN
+	1    4550 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U?
+U 2 1 5E871B27
+P 5300 3400
+F 0 "U?" H 5300 3767 50  0001 C CNN
+F 1 "TL082" H 5300 3675 50  0001 C CNN
+F 2 "" H 5300 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5300 3400 50  0001 C CNN
+	2    5300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U?
+U 3 1 5E876B23
+P 5300 3400
+F 0 "U?" H 5244 3446 50  0001 L CNN
+F 1 "TL082" H 5350 3250 50  0000 L CNN
+F 2 "" H 5300 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5300 3400 50  0001 C CNN
+	3    5300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3500 3700 3500
+Wire Wire Line
+	4150 3500 4400 3500
+Wire Wire Line
+	4700 3500 4850 3500
+Wire Wire Line
+	5000 3300 4850 3300
+Wire Wire Line
+	4850 3300 4850 3100
+$Comp
+L power:Earth #PWR?
+U 1 1 5E87A0EB
+P 4850 3100
+F 0 "#PWR?" H 4850 2850 50  0001 C CNN
+F 1 "Earth" H 4850 2950 50  0001 C CNN
+F 2 "" H 4850 3100 50  0001 C CNN
+F 3 "~" H 4850 3100 50  0001 C CNN
+	1    4850 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+15V #PWR?
+U 1 1 5E87B11B
+P 5200 3100
+F 0 "#PWR?" H 5200 2950 50  0001 C CNN
+F 1 "+15V" H 5215 3273 50  0000 C CNN
+F 2 "" H 5200 3100 50  0001 C CNN
+F 3 "" H 5200 3100 50  0001 C CNN
+	1    5200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR?
+U 1 1 5E87C7E7
+P 5200 3700
+F 0 "#PWR?" H 5200 3800 50  0001 C CNN
+F 1 "-15V" H 5215 3873 50  0000 C CNN
+F 2 "" H 5200 3700 50  0001 C CNN
+F 3 "" H 5200 3700 50  0001 C CNN
+	1    5200 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 3400 5750 3400
+Wire Wire Line
+	5750 3400 5750 4150
+Wire Wire Line
+	5750 4150 5600 4150
+Wire Wire Line
+	5750 4150 5750 4500
+Wire Wire Line
+	5750 4500 5600 4500
+Connection ~ 5750 4150
+Wire Wire Line
+	4850 3500 4850 4150
+Connection ~ 4850 3500
+Wire Wire Line
+	4850 3500 5000 3500
+Wire Wire Line
+	4850 4150 4850 4500
+Connection ~ 4850 4150
+$Comp
+L Device:R R2
+U 1 1 5E87FD6A
+P 5450 4150
+F 0 "R2" V 5350 4150 50  0000 C CNN
+F 1 "100k" V 5450 4150 50  0000 C CNN
+F 2 "" V 5380 4150 50  0001 C CNN
+F 3 "~" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 4150 5300 4150
+$Comp
+L Device:C C2
+U 1 1 5E881567
+P 5450 4500
+F 0 "C2" V 5300 4500 50  0000 C CNN
+F 1 "0.53n" V 5600 4500 50  0000 C CNN
+F 2 "" H 5488 4350 50  0001 C CNN
+F 3 "~" H 5450 4500 50  0001 C CNN
+	1    5450 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 4500 5300 4500
+Wire Wire Line
+	5750 3400 5850 3400
+Connection ~ 5750 3400
+Text GLabel 5850 3400 2    50   Output ~ 0
+VF1
+Text GLabel 3700 3500 0    50   Input ~ 0
+IN1
+$EndSCHEMATC
