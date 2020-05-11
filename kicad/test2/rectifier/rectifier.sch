@@ -275,7 +275,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 3300 8500 3250
 Connection ~ 8500 3250
-Text GLabel 9400 2850 2    50   Input ~ 0
+Text GLabel 9400 2850 2    50   Output ~ 0
 Vdirdiff
 Wire Notes Line style dash_dot
 	9850 3500 9850 2150

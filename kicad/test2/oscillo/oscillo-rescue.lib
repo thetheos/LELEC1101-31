@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# oscillo-rescue_+15V-power
+# +15V-power
 #
-DEF oscillo-rescue_+15V-power #PWR 0 0 Y Y 1 F P
+DEF +15V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "oscillo-rescue_+15V-power" 0 140 50 H V C CNN
+F1 "+15V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +15V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# oscillo-rescue_-15V-power
+# -15V-power
 #
-DEF oscillo-rescue_-15V-power #PWR 0 0 Y Y 1 F P
+DEF -15V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 100 50 H I C CNN
-F1 "oscillo-rescue_-15V-power" 0 150 50 H V C CNN
+F1 "-15V-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -29,11 +29,11 @@ X -15V 1 0 0 0 U 50 50 0 0 W N
 ENDDRAW
 ENDDEF
 #
-# oscillo-rescue_C-Device
+# C-Device
 #
-DEF oscillo-rescue_C-Device C 0 10 N Y 1 F N
+DEF C-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "oscillo-rescue_C-Device" 25 -100 50 H V L CNN
+F1 "C-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -47,11 +47,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# oscillo-rescue_Earth-power
+# Earth-power
 #
-DEF oscillo-rescue_Earth-power #PWR 0 0 Y Y 1 F P
+DEF Earth-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "oscillo-rescue_Earth-power" 0 -150 50 H I C CNN
+F1 "Earth-power" 0 -150 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -63,11 +63,11 @@ X Earth 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# oscillo-rescue_R-Device
+# R-Device
 #
-DEF oscillo-rescue_R-Device R 0 0 N Y 1 F N
+DEF R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "oscillo-rescue_R-Device" 0 0 50 V V C CNN
+F1 "R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -80,11 +80,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# oscillo-rescue_TL082-Amplifier_Operational
+# TL082-Amplifier_Operational
 #
-DEF oscillo-rescue_TL082-Amplifier_Operational U 0 5 Y Y 3 L N
+DEF TL082-Amplifier_Operational U 0 5 Y Y 3 L N
 F0 "U" 0 200 50 H V L CNN
-F1 "oscillo-rescue_TL082-Amplifier_Operational" 0 -200 50 H V L CNN
+F1 "TL082-Amplifier_Operational" 0 -200 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
